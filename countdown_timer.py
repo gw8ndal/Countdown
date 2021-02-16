@@ -20,32 +20,4 @@ def countdown():
 print(countdown())
 
 
-
-
-
-
-
-
-
-
-
-
-
-def timer():
-    tmp = int(10000)
-    while tmp > -1:
-        s, ms = divmod(tmp, 1000)
-        time_left = str(s).zfill(2) + ':' + str(ms).zfill(3)
-        print(time_left + '\r', end = '')
-        time.sleep(1)
-        tmp -= 1
-    return time_left
-
-print(timer())
-
-
-
-
-
-
     
